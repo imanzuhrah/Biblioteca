@@ -26,6 +26,9 @@ if pergunta == '1':
     # Cadastra Livro
 
     meu_livro = Livro(titulo, genero, editora, ano_publicacao, autor, isbn, numero_paginas, edicao, volume)
+
+    # Exibe as informações do livro cadastrado.
+    meu_livro.descrever()
     
 
 if pergunta == 2:
@@ -44,3 +47,5 @@ if pergunta == 2:
     # Cadastra Revista
 
     minha_revista = Revista(titulo, genero, editora, ano_publicacao, issn, mes_publicacao, edicao, volume) # type: ignore
+
+    minha_revista.descrever()
