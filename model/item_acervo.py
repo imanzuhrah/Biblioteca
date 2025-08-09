@@ -3,8 +3,8 @@ class ItemAcervo:
 
     # Método de construção de objetos.
     def __init__(self, titulo: str, genero: str,  # type: ignore
-                    editora: str, ano_publicacao: int, edicao: str = '',
-                    volume: str = ''):
+                    editora: str, ano_publicacao: int, edicao: str = '', # type: ignore
+                    volume: str = ''): # type: ignore
         
         # Atributos.
 
