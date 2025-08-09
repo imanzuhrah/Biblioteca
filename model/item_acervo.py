@@ -16,100 +16,100 @@ class ItemAcervo:
         self.volume = volume
         self.disponivel = True
 
-        # Métodos de acesso aos atributos
-        @property
-        def titulo (self) -> str:
-            return self._titulo
+    # Métodos de acesso (GET) aos atributos
+    @property
+    def titulo (self) -> str:
+        return self._titulo
         
-        @property
-        def genero (self) -> str:
-            return self._genero
+    @property
+    def genero (self) -> str:
+        return self._genero
         
-        @property
-        def editora (self) -> str:
-            return self._editora
+    @property
+    def editora (self) -> str:
+        return self._editora
         
-        @property
-        def ano_publicacao (self) -> int:
-            return self._ano_publicacao
+    @property
+    def ano_publicacao (self) -> int:
+        return self._ano_publicacao
         
-        @property
-        def edicao (self) -> int:
-            return self._edicao
+    @property
+    def edicao (self) -> int:
+        return self._edicao # type: ignore
         
-        @property
-        def volume (self) -> str:
-            return self._volume
+    @property
+    def volume (self) -> str:
+        return self._volume
         
-        @property
-        def disponivel (self) -> bool:
-            return self._disponivel
+    @property
+    def disponivel (self) -> bool:
+        return self._disponivel
         
 
-        # Métodos de modificação dos atributos
-        @titulo.setter
-        def titulo (self, valor: str):
+    # Métodos de modificação (SET) dos atributos
+    @titulo.setter
+    def titulo (self, valor: str):
 
-            # Verifica se o valor não é vazio
-            if valor != '':
-                self._titulo = valor
-            else:
-                self._titulo = 'Indefinido'
+        # Verifica se o valor não é vazio
+        if valor != '':
+            self._titulo = valor
+        else:
+            self._titulo = 'Indefinido'
 
-        @genero.setter
-        def genero (self, valor: str):
+    @genero.setter
+    def genero (self, valor: str):
 
-            # Verifica se o valor não é vazio
-            if valor != '':
-                self._genero = valor
-            else:
-                self._genero = 'Indefinido'
-
-
-        @editora.setter
-        def editora (self, valor: str):
-
-            # Verifica se o valor não é vazio
-            if valor != '':
-                self._editora = valor
-            else:
-                self._editora = 'Indefinido'
+        # Verifica se o valor não é vazio
+        if valor != '':
+            self._genero = valor
+        else:
+            self._genero = 'Indefinido'
 
 
-        @ano_publicacao.setter
-        def ano_publicacao (self, valor: int):
-            if valor > 0:
-                self._ano_publicacao = valor
-            else:
-                self._ano_publicacao = 0 # ou None
+    @editora.setter
+    def editora (self, valor: str):
+
+        # Verifica se o valor não é vazio
+        if valor != '':
+            self._editora = valor
+        else:
+            self._editora = 'Indefinido'
 
 
-        @edicao.setter
-        def edicao (self, valor: str):
-
-            # Verifica se o valor não é vazio
-            if valor != '':
-                self._edicao = valor
-            else:
-                self._edicao = 'Indefinido'
+    @ano_publicacao.setter
+    def ano_publicacao (self, valor: int):
+        if valor > 0:
+            self._ano_publicacao = valor
+        else:
+            self._ano_publicacao = 0 # ou None
 
 
-        @volume.setter
-        def volume (self, valor: str):
+    @edicao.setter
+    def edicao (self, valor: str):
 
-            # Verifica se o valor não é vazio
-            if valor != '':
-                self._volume = valor
-            else:
-                self._volume = 'Indefinido'
+        # Verifica se o valor não é vazio
+        if valor != '':
+            self._edicao = valor
+        else:
+            self._edicao = 'Indefinido'
 
 
-        @disponivel.setter
-        def disponivel (self, valor: bool):
+    @volume.setter
+    def volume (self, valor: str):
 
-            if isinstance(valor, bool):
-                self._disponivel = valor
-            else:
-                self._disponivel = True
+        # Verifica se o valor não é vazio
+        if valor != '':
+            self._volume = valor
+        else:
+            self._volume = 'Indefinido'
+
+
+    @disponivel.setter
+    def disponivel (self, valor: bool):
+
+        if isinstance(valor, bool):
+            self._disponivel = valor
+        else:
+            self._disponivel = True
 
 
