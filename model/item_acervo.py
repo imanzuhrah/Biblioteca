@@ -78,7 +78,10 @@ class ItemAcervo:
 
         @ano_publicacao.setter
         def ano_publicacao (self, valor: int):
-            self._ano_publicacao = valor
+            if valor > 0:
+                self._ano_publicacao = valor
+            else:
+                self._ano_publicacao = 0
 
 
         @edicao.setter
@@ -103,6 +106,10 @@ class ItemAcervo:
 
         @disponivel.setter
         def disponivel (self, valor: bool):
-            self._disponivel = valor
+
+            if isinstance(valor, bool):
+                self._disponivel = valor
+            else:
+                self._disponivel = True
 
 
