@@ -112,4 +112,20 @@ class ItemAcervo:
         else:
             self._disponivel = True
 
+    
+    # Método que retorna o valor dos atributos da classe
+    def descrever(self):
+
+        # Converte o atributo de disponibilidade
+        disponibilidade = 'Sim' if self.disponivel == True else 'Não'
+
+        print('Item do acervo:')
+        print(f'Título: {self.titulo}')
+        print(f'Gênero: {self.genero}')
+        print(f'Editora: {self.editora}')
+        print(f'Ano de Publicação: {self.ano_publicacao}')
+        print(f'Edição: {self.edicao}')
+        print(f'Volume: {self.volume}')
+        print(f'Disponível: {disponibilidade}')
+
 

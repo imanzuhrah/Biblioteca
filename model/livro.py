@@ -58,3 +58,22 @@ class Livro (ItemAcervo):
             self._numero_paginas = valor
         else:
             self._numero_paginas = 0 # ou None
+
+
+    # Método que retorna o valor dos atributos da classe
+    def descrever(self):
+
+        # Converte o atributo de disponibilidade
+        disponibilidade = 'Sim' if self.disponivel == True else 'Não'
+
+        print('Livro cadastrado:')
+        print(f'Título: {self.titulo}')
+        print(f'Gênero: {self.genero}')
+        print(f'Editora: {self.editora}')
+        print(f'Ano de Publicação: {self.ano_publicacao}')
+        print(f'Autor: {self.autor}')
+        print(f'ISBN: {self.isbn}')
+        print(f'Número de Páginas: {self.numero_paginas}')
+        print(f'Edição: {self.edicao}')
+        print(f'Volume: {self.volume}')
+        print(f'Disponível: {disponibilidade}')

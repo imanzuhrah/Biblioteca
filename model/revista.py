@@ -48,5 +48,22 @@ class Revista (ItemAcervo):
             self.mes_publicacao = valor
         else:
             self.mes_publicacao = 'Indefinido'
+
+    # Método que retorna o valor dos atributos da classe
+    def descrever(self):
+
+        # Converte o atributo de disponibilidade
+        disponibilidade = 'Sim' if self.disponivel == True else 'Não'
+
+        print('Revista Cadastrada:')
+        print(f'Título: {self.titulo}')
+        print(f'Gênero: {self.genero}')
+        print(f'Editora: {self.editora}')
+        print(f'Ano de Publicação: {self.ano_publicacao}')
+        print(f'Mês de Publicação: {self.mes_publicacao}')
+        print(f'Edição: {self.edicao}')
+        print(f'Volume: {self.volume}')
+        print(f'ISSN: {self.issn}')
+        print(f'Disponível: {disponibilidade}')
     
     

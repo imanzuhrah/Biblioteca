@@ -25,11 +25,7 @@ if pergunta == '1':
 
     # Cadastra Livro
 
-    meu_livro = Livro(titulo, genero,
-                    editora, ano_publicacao, autor, 
-                    isbn, numero_paginas,
-                    edicao,
-                    volume)
+    meu_livro = Livro(titulo, genero, editora, ano_publicacao, autor, isbn, numero_paginas, edicao, volume)
     
 
 if pergunta == 2:
