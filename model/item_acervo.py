@@ -81,7 +81,7 @@ class ItemAcervo:
             if valor > 0:
                 self._ano_publicacao = valor
             else:
-                self._ano_publicacao = 0
+                self._ano_publicacao = 0 # ou None
 
 
         @edicao.setter
