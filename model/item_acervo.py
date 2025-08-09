@@ -44,5 +44,25 @@ class ItemAcervo:
         @property
         def disponivel (self) -> bool:
             return self._disponivel
+        
+
+        # Métodos de modificação dos atributos
+        @titulo.setter
+        def titulo (self, valor: str):
+
+            # Verifica se o valor não é vazio
+            if valor != '':
+                self._titulo = valor
+            else:
+                self._titulo = 'Indefinido'
+
+        @genero.setter
+        def genero (self, valor: str):
+
+            # Verifica se o valor não é vazio
+            if valor != '':
+                self._genero = valor
+            else:
+                self._genero = 'Indefinido'
 
 
