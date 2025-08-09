@@ -16,5 +16,33 @@ class ItemAcervo:
         self._volume = volume
         self._disponivel = True
 
-
+        # Métodos de acesso aos atributos
+        @property
+        def titulo (self) -> str:
+            return self._titulo
         
+        @property
+        def genero (self) -> str:
+            return self._genero
+        
+        @property
+        def editora (self) -> str:
+            return self._editora
+        
+        @property
+        def ano_publicacao (self) -> int:
+            return self._ano_publicacao
+        
+        @property
+        def edicao (self) -> int:
+            return self._edicao
+        
+        @property
+        def volume (self) -> str:
+            return self._volume
+        
+        @property
+        def disponivel (self) -> bool:
+            return self._disponivel
+
+
