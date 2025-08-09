@@ -8,7 +8,7 @@ class Revista (ItemAcervo):
     # Método de construção de objetos.
     def __init__(self, titulo: str, genero: str,  # type: ignore
                     editora: str, ano_publicacao: int,  
-                    issn: str, mes_publicacao: int = 0,
+                    issn: str, mes_publicacao: str,
                     edicao: str = '', # type: ignore
                     volume: str = ''): # type: ignore
         
@@ -42,10 +42,11 @@ class Revista (ItemAcervo):
             self._issn = 'Indefinido'
 
     @mes_publicacao.setter
-    def mes_publicacao (self, valor: int):
-        if valor > 0:
-            self._mes_publicacao = valor
+    def mes_publicacao (self, valor: str):
+        # Verifica se o valor não é vazio
+        if valor != '':
+            self.mes_publicacao = valor
         else:
-            self._mes_publicacao = 0 # ou None
+            self.mes_publicacao = 'Indefinido'
     
     
