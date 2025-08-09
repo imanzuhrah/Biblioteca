@@ -51,3 +51,10 @@ class Livro (ItemAcervo):
             self._isbn = valor
         else:
             self._isbn = 'Indefinido'
+
+    @numero_paginas.setter
+    def numero_paginas (self, valor: int):
+        if valor > 0:
+            self._numero_paginas = valor
+        else:
+            self._numero_paginas = 0 # ou None
