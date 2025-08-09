@@ -16,8 +16,8 @@ class Livro (ItemAcervo):
                         ano_publicacao, edicao, volume) # type: ignore
         
         # Atributos próprios
-        self._autor = autor
-        self._isbn = isbn
+        self.autor = autor
+        self.isbn = isbn
         self.numero_paginas = numero_paginas # type: ignore
 
     # Métodos de acesso (GET) aos atributos

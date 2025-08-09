@@ -16,7 +16,7 @@ class Revista (ItemAcervo):
         super().__init__(titulo, genero, editora, ano_publicacao, edicao, volume) 
 
         # Atributos próprios
-        self._issn = issn
+        self.issn = issn
         self.mes_publicacao = mes_publicacao # type: ignore
     
 
