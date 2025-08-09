@@ -2,7 +2,7 @@
 class ItemAcervo:
 
     # Método de construção de objetos.
-    def __init__(self, titulo: str, genero: str, 
+    def __init__(self, titulo: str, genero: str,  # type: ignore
                     editora: str, ano_publicacao: int, edicao: str = '',
                     volume: str = ''):
         
@@ -64,5 +64,45 @@ class ItemAcervo:
                 self._genero = valor
             else:
                 self._genero = 'Indefinido'
+
+
+        @editora.setter
+        def editora (self, valor: str):
+
+            # Verifica se o valor não é vazio
+            if valor != '':
+                self._editora = valor
+            else:
+                self._editora = 'Indefinido'
+
+
+        @ano_publicacao.setter
+        def ano_publicacao (self, valor: int):
+            self._ano_publicacao = valor
+
+
+        @edicao.setter
+        def edicao (self, valor: str):
+
+            # Verifica se o valor não é vazio
+            if valor != '':
+                self._edicao = valor
+            else:
+                self._edicao = 'Indefinido'
+
+
+        @volume.setter
+        def volume (self, valor: str):
+
+            # Verifica se o valor não é vazio
+            if valor != '':
+                self._volume = valor
+            else:
+                self._volume = 'Indefinido'
+
+
+        @disponivel.setter
+        def disponivel (self, valor: bool):
+            self._disponivel = valor
 
 
