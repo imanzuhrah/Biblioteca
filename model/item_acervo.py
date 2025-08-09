@@ -8,13 +8,13 @@ class ItemAcervo:
         
         # Atributos.
 
-        self._titulo = titulo
-        self._genero = genero
-        self._editora = editora
-        self._ano_publicacao = ano_publicacao
-        self._edicao = edicao
-        self._volume = volume
-        self._disponivel = True
+        self.titulo = titulo
+        self.genero = genero
+        self.editora = editora
+        self.ano_publicacao = ano_publicacao
+        self.edicao = edicao
+        self.volume = volume
+        self.disponivel = True
 
         # Métodos de acesso aos atributos
         @property
